@@ -30,7 +30,7 @@ nav {
 
 @media (min-width: 375px) and (max-width: 768px) {
   .header {
-    margin: 48px 12px 0;
+    margin: 14px 12px 0;
     justify-content: space-between;
     align-items: center;
     padding: 12px 12px 24px;

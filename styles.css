@@ -21,13 +21,19 @@ body {
 
 .header {
   display: flex;
-  justify-content: space-between;
+}
+
+nav {
+  display: flex;
   align-items: center;
 }
 
 @media (min-width: 375px) and (max-width: 768px) {
   .header {
     margin: 48px 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 12px 24px;
   }
 
   .logo {
@@ -41,10 +47,10 @@ body {
     color: #6070ff;
   }
 
-  .container h2 {
+  .container h1 {
     font-size: 40px;
     font-weight: 700;
-    margin: 114px 24px 0;
+    margin: 90px 24px 0;
     color: #172b4d;
   }
 
@@ -77,9 +83,8 @@ body {
     display: flex;
     flex-direction: column;
     padding-bottom: 50%;
-    padding-top: 20%;
     background-image: url("./images/header-shapes\ mobile.png");
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
     background-size: contain;
   }

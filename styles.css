@@ -21,7 +21,6 @@ nav {
   align-items: center;
 }
 
-@media (min-width: 375px) and (max-width: 768px) {
   .header {
     /* margin: 14px 12px 0; */
     justify-content: space-between;
@@ -100,7 +99,7 @@ nav {
     margin-top: 12px;
   }
 
-  .work_desc h1 {
+  .work_desc h2 {
     font-size: 32px;
     font-weight: 700;
   }
@@ -191,7 +190,7 @@ nav {
     padding: 114px 24px;
   }
 
-  .intro h1 {
+  .intro h2 {
     font-size: 40px;
     font-weight: 700;
     color: #172b4d;
@@ -254,4 +253,4 @@ nav {
   hr {
     border-color: #dfe1e6;
   }
-}
+

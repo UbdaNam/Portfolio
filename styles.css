@@ -11,18 +11,14 @@ body {
   background-color: #f7f7f9;
 }
 
-.header {
-  display: flex;
-  background-color: #fff;
-}
-
 nav {
   display: flex;
   align-items: center;
 }
 
 .header {
-  /* margin: 14px 12px 0; */
+  display: flex;
+  background-color: #fff;
   justify-content: space-between;
   align-items: center;
   padding: 26px 24px 24px;
@@ -253,4 +249,3 @@ nav {
 hr {
   border-color: #dfe1e6;
 }
-

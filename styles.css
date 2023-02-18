@@ -211,7 +211,7 @@ nav {
   justify-content: space-between;
 }
 
-.li_title h2 {
+.li_title h3 {
   font-size: 20px;
   font-weight: 500;
 }
@@ -241,7 +241,7 @@ nav {
   background-color: #f7f7f9;
 }
 
-.li_card h3 {
+.li_card h4 {
   font-size: 15px;
   font-weight: 500;
 }

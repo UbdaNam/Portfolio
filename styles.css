@@ -134,10 +134,13 @@ nav {
 }
 
 .work_desc ul {
-  display: flex;
-  gap: 8px;
   list-style: none;
   margin-top: 12px;
+}
+
+.stack {
+  float: left;
+  margin-left: 8px;
 }
 
 .work_desc li {
@@ -151,7 +154,7 @@ nav {
 
 .action {
   margin-top: 12px;
-  display: flex;
+  display: block;
   padding: 12px 0;
 }
 

@@ -253,3 +253,69 @@ nav {
 hr {
   border-color: #dfe1e6;
 }
+
+.Contact_form_container {
+  background-color: #fff;
+}
+
+.Contact_form {
+  display: flex;
+  flex-direction: column;
+  padding: 103px 24px 8px;
+  background-color: #6070FF;
+  background-image: url("images/Contact_form_background/header-shapes\ mobile.png");
+  border-top-left-radius:70px ;
+  /* background-position: top; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+.form_heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 0;
+  width: 100%;
+}
+
+.form_heading h2 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.Contact_form p {
+  color: #EBEBFF;
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 12px;
+  text-align: center;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.user_name {
+  margin-top: 47px;
+  border-radius: 8px;
+  padding: 15px 38px 15px 16px;
+  border: none;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.user_email {
+  margin-top: 20px;
+  padding: 15px 38px 15px 16px;
+  border-radius: 8px;
+  border: none;
+  font-size: 17px;
+  font-weight: 400;
+}
+/* .flex {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+} */

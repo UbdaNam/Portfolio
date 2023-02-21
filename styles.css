@@ -263,25 +263,23 @@ hr {
   flex-direction: column;
   padding: 103px 24px 8px;
   background-color: #6070FF;
-  background-image: url("images/Contact_form_background/header-shapes\ mobile.png");
   border-top-left-radius:70px ;
-  /* background-position: top; */
+  background-image: url("images/Microverse-Student-Project-1/contact\ form\ shapes-mobile.svg");
+  background-position: right 25px;
   background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
 }
 
 .form_heading {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 8px 0;
-  width: 100%;
+  padding: 2px 0;
 }
 
 .form_heading h2 {
   font-size: 40px;
   font-weight: 700;
+  line-height: 52px;
   color: #fff;
 }
 
@@ -292,13 +290,15 @@ hr {
   margin-top: 12px;
   text-align: center;
 }
+
 .form {
   display: flex;
   flex-direction: column;
 }
 
 .user_name {
-  margin-top: 47px;
+  margin-top: 37px;
+  color: #172B4D;
   border-radius: 8px;
   padding: 15px 38px 15px 16px;
   border: none;
@@ -307,15 +307,44 @@ hr {
 }
 
 .user_email {
-  margin-top: 20px;
   padding: 15px 38px 15px 16px;
+  color: #172b4d;
+  margin-top: 20px;
   border-radius: 8px;
   border: none;
   font-size: 17px;
   font-weight: 400;
 }
-/* .flex {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-} */
+
+.message {
+  margin-top: 18px;
+  padding: 15px 38px 15px 16px;
+  font-size: 15px;
+  font-weight: 400;
+  border-radius: 8px;
+  border: none;
+}
+
+::placeholder {
+  color: #B3BAC5;
+}
+
+.form button{
+  margin-top: 22px;
+  padding: 12px 16px;
+  background-color: #fff;
+  border-radius: 8px;
+  border: none;
+  color: #6070ff;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.Contact_form hr {
+  width: 134px;
+  height: 5px;
+  margin: 32px auto 0;
+  background-color: #0d151e;
+  border-radius: 10px;
+  border: none;
+}

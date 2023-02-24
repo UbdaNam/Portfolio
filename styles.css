@@ -427,6 +427,8 @@ hr {
     padding: 24px 22px 24px 24px;
     max-width: 1156px;
     background-color: #fff;
+    border: 1px solid #DFE1E6;
+    border-radius: 24px;
   }
 
   .desktop_image {

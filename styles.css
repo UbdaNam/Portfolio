@@ -419,7 +419,7 @@ hr {
     display: grid;
     gap: 142px;
   }
-  
+
   .card {
     display: flex;
     margin-inline: auto;
@@ -436,35 +436,35 @@ hr {
   .card img:nth-child(1) {
     display: none;
   }
-  
+
   .work_desc {
     margin-top: 12px;
     max-width: 445px;
     padding: 24px;
   }
-  
+
   .work_desc h2 {
     font-size: 40px;
     font-weight: 700;
-    color: #091E42;
+    color: #091e42;
   }
-  
+
   .heading_3 h3 {
     font-size: 18px;
     font-weight: 400;
     color: #7a869a;
   }
-  
+
   .heading_3 .main_h3 {
     color: #344563;
     font-weight: 500;
   }
-  
+
   .work_desc p {
     margin-top: 24px;
     font-size: 16px;
   }
-  
+
   .work_desc ul {
     margin-top: 24px;
   }
@@ -478,7 +478,7 @@ hr {
   .about {
     margin-top: 142px;
   }
-  
+
   .intro {
     display: flex;
     flex-direction: row;
@@ -487,13 +487,13 @@ hr {
     border-top-right-radius: 150px;
     padding: 142px 142px 134px;
   }
-  
+
   .description_container {
     max-width: 447px;
   }
 
   .intro h2 {
-    color: #091e42; 
+    color: #091e42;
   }
 
   .description_container p {
@@ -501,8 +501,8 @@ hr {
     font-weight: 400;
     color: #344563;
   }
-  
-  .social_media_icons {
+
+  .description_container .social_media_icons {
     margin-top: 16px;
     padding-inline: 10px;
   }
@@ -519,11 +519,11 @@ hr {
     padding: 0;
     width: 684px;
   }
-  
+
   .li_title {
     padding: 24px;
   }
-  
+
   .li_title h3 {
     color: #344563;
   }
@@ -533,20 +533,20 @@ hr {
     flex-direction: row;
     width: 414px;
   }
-  
+
   .li_card {
     display: grid;
     width: 122px;
     padding: 12px 12px 20px;
     gap: 16px;
   }
-  
+
   .li_card h4 {
     font-size: 15px;
     font-weight: 500;
     color: #253858;
   }
-  
+
   hr {
     border-color: #dfe1e6;
   }
@@ -565,7 +565,7 @@ hr {
     background-position: center;
     background-repeat: no-repeat;
   }
-  
+
   .Contact_form hr {
     display: none;
   }

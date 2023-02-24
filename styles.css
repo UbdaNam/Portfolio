@@ -30,10 +30,15 @@ nav {
   font-weight: 700;
   color: #6070ff;
   text-decoration: none;
+  line-height: 20px;
 }
 
-.menu_icon {
+nav .menu_icon {
   color: #6070ff;
+}
+
+.menu {
+  display: none;
 }
 
 .container h1 {
@@ -91,6 +96,10 @@ nav {
   background-color: #fff;
 }
 
+.desktop_image {
+  display: none;
+}
+
 .work_desc {
   margin-top: 12px;
 }
@@ -134,13 +143,10 @@ nav {
 }
 
 .work_desc ul {
+  display: flex;
+  gap: 8px;
   list-style: none;
   margin-top: 12px;
-}
-
-.stack {
-  float: left;
-  margin-left: 8px;
 }
 
 .work_desc li {
@@ -154,7 +160,7 @@ nav {
 
 .action {
   margin-top: 12px;
-  display: block;
+  display: flex;
   padding: 12px 0;
 }
 
@@ -347,4 +353,222 @@ hr {
   background-color: #0d151e;
   border-radius: 10px;
   border: none;
+}
+
+@media (min-width: 768px) {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 26px 142px 26px 155px;
+    border: none;
+  }
+
+  nav .menu_icon {
+    display: none;
+  }
+
+  nav .menu {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    align-items: center;
+  }
+
+  nav .menu a {
+    padding-inline: 12px;
+    font-weight: 500;
+    font-size: 15px;
+    text-decoration: none;
+    color: #344563;
+  }
+
+  .container {
+    margin-top: 76px;
+    padding: 0;
+    background-image: url("./images/Desktop_bg/Header\ bg.svg");
+    background-position: center;
+    border-bottom-left-radius: 150px;
+    background-size: auto;
+  }
+
+  .main_container {
+    margin: 288px auto 255px;
+  }
+
+  .container h1 {
+    font-size: 48px;
+    color: #091e42;
+  }
+
+  .description {
+    font-size: 20px;
+    max-width: 920px;
+  }
+
+  .social_media {
+    font-size: 16px;
+  }
+
+  .social_media_icons {
+    margin-top: 14px;
+  }
+
+  .works_container {
+    display: grid;
+    gap: 142px;
+  }
+
+  .card {
+    display: flex;
+    margin-inline: auto;
+    gap: 22px;
+    padding: 24px 22px 24px 24px;
+    max-width: 1156px;
+    background-color: #fff;
+    border: 1px solid #dfe1e6;
+    border-radius: 24px;
+  }
+
+  .desktop_image {
+    display: block;
+  }
+
+  .card img:nth-child(1) {
+    display: none;
+  }
+
+  .work_desc {
+    margin-top: 12px;
+    max-width: 445px;
+    padding: 24px;
+  }
+
+  .work_desc h2 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #091e42;
+  }
+
+  .heading_3 h3 {
+    font-size: 18px;
+    font-weight: 400;
+    color: #7a869a;
+  }
+
+  .heading_3 .main_h3 {
+    color: #344563;
+    font-weight: 500;
+  }
+
+  .work_desc p {
+    margin-top: 24px;
+    font-size: 16px;
+  }
+
+  .work_desc ul {
+    margin-top: 24px;
+  }
+
+  .action {
+    margin-top: 24px;
+    display: flex;
+    padding-top: 16px;
+  }
+
+  .about {
+    margin-top: 142px;
+  }
+
+  .intro {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    background-color: #fff;
+    border-top-right-radius: 150px;
+    padding: 142px 142px 134px;
+  }
+
+  .description_container {
+    max-width: 447px;
+  }
+
+  .intro h2 {
+    color: #091e42;
+  }
+
+  .description_container p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #344563;
+  }
+
+  .description_container .social_media_icons {
+    margin-top: 16px;
+    padding-inline: 10px;
+  }
+
+  .social_media_icons li {
+    padding-block: 10px;
+  }
+
+  .about_action {
+    margin-top: 24px;
+  }
+
+  .language {
+    padding: 0;
+    width: 684px;
+  }
+
+  .li_title {
+    padding: 24px;
+  }
+
+  .li_title h3 {
+    color: #344563;
+  }
+
+  .li_container {
+    padding: 12px;
+    flex-direction: row;
+    width: 414px;
+  }
+
+  .li_card {
+    display: grid;
+    width: 122px;
+    padding: 12px 12px 20px;
+    gap: 16px;
+  }
+
+  .li_card h4 {
+    font-size: 15px;
+    font-weight: 500;
+    color: #253858;
+  }
+
+  hr {
+    border-color: #dfe1e6;
+  }
+
+  .desktop_form {
+    margin-inline: auto;
+    width: 801px;
+    text-align: center;
+    padding-inline: 116px;
+  }
+
+  .Contact_form {
+    padding: 142px 320px 127px;
+    border-top-left-radius: 150px;
+    background-image: url("images/Desktop_Contact_form_bg/contact\ form\ background\ shapes.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .Contact_form hr {
+    display: none;
+  }
 }

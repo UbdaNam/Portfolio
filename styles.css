@@ -31,6 +31,17 @@ nav {
   color: #6070ff;
   text-decoration: none;
   line-height: 20px;
+  animation: rotate 0.8s ease;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateY(0deg);
+  }
+
+  100% {
+    transform: rotateY(360deg);
+  }
 }
 
 nav .menu_icon {
@@ -94,6 +105,14 @@ nav .menu_icon {
 .card {
   padding: 16px;
   background-color: #fff;
+}
+
+.card img:nth-child(1) {
+  transition: 0.3s;
+}
+
+.card img:nth-child(1):hover {
+  scale: 1.09;
 }
 
 .desktop_image {
@@ -172,11 +191,14 @@ nav .menu_icon {
   border-radius: 8px;
   font-size: 17px;
   font-weight: 500;
+  transition: 0.3s ease;
 }
 
 .btn:hover {
   background-color: #6070ff;
   color: #fff;
+  scale: 1.02;
+  letter-spacing: 1px;
 }
 
 .btn:focus {
@@ -310,6 +332,7 @@ hr {
   border: none;
   font-size: 17px;
   font-weight: 400;
+  transition: 0.2s linear;
 }
 
 .user_email {
@@ -320,6 +343,7 @@ hr {
   border: none;
   font-size: 17px;
   font-weight: 400;
+  transition: 0.3s linear;
 }
 
 .message {
@@ -329,6 +353,12 @@ hr {
   font-weight: 400;
   border-radius: 8px;
   border: none;
+  transition: 0.3s linear;
+}
+
+input:hover, input:focus, textarea:hover, textarea:focus {
+  transform: translateY(-2px);
+  scale: 1.015;
 }
 
 ::placeholder {
@@ -433,6 +463,11 @@ hr {
 
   .desktop_image {
     display: block;
+    transition: 0.3s;
+  }
+
+  .desktop_image:hover {
+    scale: 1.04;
   }
 
   .card img:nth-child(1) {

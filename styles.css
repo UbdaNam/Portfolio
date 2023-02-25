@@ -356,7 +356,10 @@ hr {
   transition: 0.3s linear;
 }
 
-input:hover, input:focus, textarea:hover, textarea:focus {
+input:hover,
+input:focus,
+textarea:hover,
+textarea:focus {
   transform: translateY(-2px);
   scale: 1.015;
 }

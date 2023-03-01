@@ -28,7 +28,7 @@ nav {
 .logo {
   font-size: 18px;
   font-weight: 700;
-  color: #6070ff;
+  color: #6070c8;
   text-decoration: none;
   line-height: 20px;
   animation: rotate 0.8s ease;
@@ -69,7 +69,7 @@ nav .menu_icon {
   font-size: 16px;
   font-weight: 500;
   margin-top: 12px;
-  color: #7f8cff;
+  color: #4671dd;
 }
 
 .social_media_icons {
@@ -140,7 +140,7 @@ nav .menu_icon {
 .heading_3 h3 {
   font-size: 13px;
   font-weight: 600;
-  color: #7a869a;
+  color: #5a769a;
 }
 
 .heading_3 .main_h3 {
@@ -313,8 +313,8 @@ hr {
 
 .Contact_form p {
   color: #ebebff;
-  font-size: 20px;
-  font-weight: 400;
+  font-size: 19px;
+  font-weight: 600;
   margin-top: 12px;
   text-align: center;
 }
@@ -364,6 +364,10 @@ textarea:focus {
   scale: 1.015;
 }
 
+label {
+  display: none;
+}
+
 ::placeholder {
   color: #b3bac5;
 }
@@ -374,7 +378,7 @@ textarea:focus {
   background-color: #fff;
   border-radius: 8px;
   border: none;
-  color: #6070ff;
+  color: #6070c8;
   font-size: 17px;
   font-weight: 500;
 }
@@ -492,7 +496,7 @@ textarea:focus {
   .heading_3 h3 {
     font-size: 18px;
     font-weight: 400;
-    color: #7a869a;
+    color: #5a769a;
   }
 
   .heading_3 .main_h3 {

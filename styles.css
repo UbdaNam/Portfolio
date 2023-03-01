@@ -400,6 +400,7 @@ label {
     right: 0;
     padding: 26px 142px 26px 155px;
     border: none;
+    z-index: 999;
   }
 
   nav .menu_icon {

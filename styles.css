@@ -290,7 +290,7 @@ hr {
   display: flex;
   flex-direction: column;
   padding: 103px 24px 8px;
-  background-color: #6070ff;
+  background-color: #4B5AF0;
   border-top-left-radius: 70px;
   background-image: url("images/Microverse-Student-Project-1/contact\ form\ shapes-mobile.svg");
   background-position: right 25px;
@@ -308,12 +308,13 @@ hr {
   font-size: 40px;
   font-weight: 700;
   line-height: 52px;
-  color: #000;
+  color: #fff;
 }
 
 .Contact_form p {
-  color: #290d08;
+  color: #ebefff;
   font-size: 19px;
+  background-color: #4B5AF0;
   font-weight: 400;
   margin-top: 12px;
   text-align: center;

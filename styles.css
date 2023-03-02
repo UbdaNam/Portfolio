@@ -312,8 +312,9 @@ hr {
 }
 
 .Contact_form p {
-  color: #ebebff;
+  color: #fff;
   font-size: 19px;
+  background-color: #6070ff;
   font-weight: 600;
   margin-top: 12px;
   text-align: center;

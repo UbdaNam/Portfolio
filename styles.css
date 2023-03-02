@@ -171,7 +171,7 @@ nav .menu_icon {
 .work_desc li {
   font-size: 12px;
   font-weight: 500;
-  color: #6070ff;
+  color: #604bff;
   background-color: #ebebff;
   padding: 4px 12px;
   border-radius: 8px;
@@ -596,19 +596,20 @@ label {
     border-color: #dfe1e6;
   }
 
-  .desktop_form {
+  /* .desktop_form {
     margin-inline: auto;
-    width: 801px;
+    max-width: 1201px;
     text-align: center;
     padding-inline: 116px;
-  }
+  } */
 
   .Contact_form {
-    padding: 142px 320px 127px;
+    padding: 13% 23% 12%;
     border-top-left-radius: 150px;
     background-image: url("images/Desktop_Contact_form_bg/contact\ form\ background\ shapes.svg");
     background-position: center;
     background-repeat: no-repeat;
+    text-align: center;
   }
 
   .Contact_form hr {

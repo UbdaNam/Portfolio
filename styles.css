@@ -28,7 +28,7 @@ nav {
 .logo {
   font-size: 18px;
   font-weight: 700;
-  color: #6070ff;
+  color: #6070c8;
   text-decoration: none;
   line-height: 20px;
   animation: rotate 0.8s ease;
@@ -69,7 +69,7 @@ nav .menu_icon {
   font-size: 16px;
   font-weight: 500;
   margin-top: 12px;
-  color: #7f8cff;
+  color: #4671dd;
 }
 
 .social_media_icons {
@@ -140,7 +140,7 @@ nav .menu_icon {
 .heading_3 h3 {
   font-size: 13px;
   font-weight: 600;
-  color: #7a869a;
+  color: #5a769a;
 }
 
 .heading_3 .main_h3 {
@@ -171,7 +171,7 @@ nav .menu_icon {
 .work_desc li {
   font-size: 12px;
   font-weight: 500;
-  color: #6070ff;
+  color: #604bff;
   background-color: #ebebff;
   padding: 4px 12px;
   border-radius: 8px;
@@ -290,7 +290,7 @@ hr {
   display: flex;
   flex-direction: column;
   padding: 103px 24px 8px;
-  background-color: #6070ff;
+  background-color: #4b5af0;
   border-top-left-radius: 70px;
   background-image: url("images/Microverse-Student-Project-1/contact\ form\ shapes-mobile.svg");
   background-position: right 25px;
@@ -312,8 +312,9 @@ hr {
 }
 
 .Contact_form p {
-  color: #ebebff;
-  font-size: 20px;
+  color: #ebefff;
+  font-size: 19px;
+  background-color: #4b5af0;
   font-weight: 400;
   margin-top: 12px;
   text-align: center;
@@ -364,6 +365,10 @@ textarea:focus {
   scale: 1.015;
 }
 
+label {
+  display: none;
+}
+
 ::placeholder {
   color: #b3bac5;
 }
@@ -374,7 +379,7 @@ textarea:focus {
   background-color: #fff;
   border-radius: 8px;
   border: none;
-  color: #6070ff;
+  color: #6070c8;
   font-size: 17px;
   font-weight: 500;
 }
@@ -396,6 +401,7 @@ textarea:focus {
     right: 0;
     padding: 26px 142px 26px 155px;
     border: none;
+    z-index: 999;
   }
 
   nav .menu_icon {
@@ -492,7 +498,7 @@ textarea:focus {
   .heading_3 h3 {
     font-size: 18px;
     font-weight: 400;
-    color: #7a869a;
+    color: #5a769a;
   }
 
   .heading_3 .main_h3 {
@@ -591,19 +597,13 @@ textarea:focus {
     border-color: #dfe1e6;
   }
 
-  .desktop_form {
-    margin-inline: auto;
-    width: 801px;
-    text-align: center;
-    padding-inline: 116px;
-  }
-
   .Contact_form {
-    padding: 142px 320px 127px;
+    padding: 13% 23% 12%;
     border-top-left-radius: 150px;
     background-image: url("images/Desktop_Contact_form_bg/contact\ form\ background\ shapes.svg");
     background-position: center;
     background-repeat: no-repeat;
+    text-align: center;
   }
 
   .Contact_form hr {

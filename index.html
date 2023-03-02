@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
+  <title>Abdurahim's Portfolio</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
@@ -55,8 +55,8 @@
   </section>
   <section class="works_container">
     <div class="card">
-      <img src="images/Snapshoot Portfolio.png" alt="Portfolio image">
-      <img class="desktop_image" src="images/Portoflio Card/Snapshoot Portfolio.png" alt="Portfolio image">
+      <img src="images/Snapshoot Portfolio.png" alt="Portfolio image 1">
+      <img class="desktop_image" src="images/Portoflio Card/Snapshoot Portfolio.png" alt="Portfolio image 1">
       <div class="work_desc">
         <h2>Tonic</h2>
         <div class="heading_3">
@@ -231,16 +231,18 @@
   </section>
   <footer class="Contact_form_container">
     <div class="Contact_form">
-      <div class="desktop_form">
         <div class="form_heading">
           <h2>Contact me</h2>
         </div>
         <p>If you have an application you are interested in developing, a feature that you need built or a project that
           needs coding. I’d love to help with it </p>
         <form class="form" action="https://formspree.io/f/moqzdlre" method="post">
-          <input class="user_name" maxlength="30" name="User_Name" type="text" required placeholder="User Name">
-          <input class="user_email" name="User_Email" type="email" required placeholder="User Email">
-          <textarea class="message" maxlength="500" name="user_message" required placeholder="Write your message here"
+          <label for="user_name">User Name</label>
+          <input class="user_name" id="user_name" maxlength="30" name="User_Name" type="text" required placeholder="User Name">
+          <label for="user_email"> User Email</label>
+          <input class="user_email" id="user_email" name="User_Email" type="email" required placeholder="User Email">
+          <label for="message">Write your message</label>
+          <textarea class="message" id="message" maxlength="500" name="user_message" required placeholder="Write your message here"
             rows="8"></textarea>
           <div>
             <button>
@@ -249,7 +251,7 @@
           </div>
         </form>
         <hr>
-      </div>
+      
     </div>
   </footer>
 </body>

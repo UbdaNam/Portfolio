@@ -23,6 +23,7 @@
           <a href="#">
             Portoflio
           </a>
+          
         </li>
         <li>
           <a href="#">
@@ -37,7 +38,32 @@
       </ul>
     </nav>
   </header>
-  <section class="container">
+  <section class="popup-nav">
+    <div class="popup-header">
+      <button class="cancel-button">
+        <img src="images/icons/Cancel-Icon.svg" alt="Cancel icon">
+      </button>
+    </div>
+    <ul class="popup-menu">
+      <li>
+        <a class="menu-item" href="#container">
+          Portoflio
+        </a>
+      </li>
+      <li>
+        <a class="menu-item2" href="#about">
+          About
+        </a>
+      </li>
+      <li>
+        <a class="menu-item3" href="#contact_form">
+          Contact
+        </a>
+      </li>
+    </ul>
+    <hr>
+  </section>
+  <section id="container" class="container">
     <div class="main_container">
       <h1>I’m Abdurahim <br> Glad to see you!</h1>
       <p class="description">I’m a software developer! I can help you build a product , feature or website Look
@@ -155,7 +181,7 @@
       <img class="desktop_image" src="images/Portoflio Card/Snapshoot Portfolio_4.png" alt="Portfolio image 4">
     </div>
   </section>
-  <section class="about">
+  <section id="about" class="about">
     <div class="intro">
       <div class="description_container">
         <h2>About <br> Myself</h2>
@@ -229,7 +255,7 @@
       </div>
     </div>
   </section>
-  <footer class="Contact_form_container">
+  <footer id="contact_form" class="Contact_form_container">
     <div class="Contact_form">
         <div class="form_heading">
           <h2>Contact me</h2>
@@ -251,9 +277,9 @@
           </div>
         </form>
         <hr>
-      
     </div>
   </footer>
+  <script src="index.js"></script>
 </body>
 
 </html>

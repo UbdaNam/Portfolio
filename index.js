@@ -8,3 +8,7 @@ function closePopUp() {
 
 document.querySelector(".menu_icon").addEventListener("click",openPopUp)
 document.querySelector(".cancel-button").addEventListener("click",closePopUp)
+document.querySelector(".popup-menu .menu-item").addEventListener("click",closePopUp)
+document.querySelector(".popup-menu .menu-item2").addEventListener("click",closePopUp)
+document.querySelector(".popup-menu .menu-item3").addEventListener("click",closePopUp)
+document.querySelector(".popup-nav").addEventListener("click",closePopUp)

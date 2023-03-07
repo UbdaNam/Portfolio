@@ -44,6 +44,10 @@ nav {
   }
 }
 
+hr {
+  border-color: #dfe1e6;
+}
+
 nav .menu_icon {
   color: #6070ff;
 }
@@ -62,7 +66,7 @@ nav .menu_icon {
   bottom: 0;
   background-color: rgba(60, 94, 215, 0.826);
   mix-blend-mode: multiply;
-  backdrop-filter:blur(8px);
+  backdrop-filter: blur(8px);
 }
 
 .popup-nav-visible {
@@ -328,10 +332,6 @@ nav .menu_icon {
 .li_card h4 {
   font-size: 15px;
   font-weight: 500;
-}
-
-hr {
-  border-color: #dfe1e6;
 }
 
 .Contact_form_container {

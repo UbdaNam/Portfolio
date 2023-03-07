@@ -12,3 +12,6 @@ document.querySelector('.popup-menu .menu-item').addEventListener('click', close
 document.querySelector('.popup-menu .menu-item2').addEventListener('click', closePopUp);
 document.querySelector('.popup-menu .menu-item3').addEventListener('click', closePopUp);
 document.querySelector('.popup-nav').addEventListener('click', closePopUp);
+
+
+document.querySelector('.popup-nav')

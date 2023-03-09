@@ -211,7 +211,7 @@ nav .menu_icon {
 }
 
 .work_desc p {
-  margin-top: 12px;
+  margin-top: 2px;
   font-size: 15px;
   font-weight: 400;
   color: #344563;
@@ -234,13 +234,13 @@ nav .menu_icon {
 }
 
 .action {
-  margin-top: 12px;
+  margin-top: 2%;
   display: flex;
-  padding: 12px 0;
+  padding: 2% 0;
 }
 
 .btn {
-  padding: 12px;
+  padding: 5%;
   color: #396df2;
   background-color: #fff;
   border: 1px solid #6070ff;
@@ -445,6 +445,100 @@ label {
   border: none;
 }
 
+/*popup card style*/
+.popup-card {
+  display: none;
+  justify-content: center;
+  background-color: transparent;
+  backdrop-filter: blur(12px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 999;
+  padding: 2% 8%;
+  overflow: auto;
+}
+
+.popup-work_desc {
+  display: flex;
+  width: 80%;
+  height: 80%;
+  margin-inline:auto ;
+  flex-direction: column;
+  padding: 1%;
+  background-color: #fff;
+}
+
+.popup-desktop_image {
+  margin-top: 3%;
+}
+
+.popup-description {
+  margin-top: 5%;
+  display: flex;
+}
+
+.popup-description p {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.popup-stack-links {
+  margin-left: 3%;
+}
+
+.popup-stack-links ul {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 8px;
+  list-style: none;
+  margin-top: 12px;
+  margin-right: 3em;
+}
+
+.popup-stack-links li {
+  font-size: 12px;
+  font-weight: 500;
+  color: #604bff;
+  background-color: #ebebff;
+  padding: 4px 12px;
+  border-radius: 8px;
+}
+
+.popup-action {
+  display: flex;
+  margin-top: 20%;
+  justify-content: space-between;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup-header {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 1rem;
+}
+
+.popup-header h2 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #091e42;
+}
+
+.popup-cancel-icon {
+  background: none;
+  border: none;
+  align-items: center;
+  justify-content: center;
+}
+
+/*popup card style end*/
 @media (min-width: 768px) {
   .header {
     position: fixed;
@@ -453,7 +547,7 @@ label {
     right: 0;
     padding: 26px 142px 26px 155px;
     border: none;
-    z-index: 999;
+    z-index: 3;
   }
 
   nav .menu_icon {

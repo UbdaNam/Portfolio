@@ -83,6 +83,8 @@ nav .menu_icon {
 }
 
 .popup-action a {
+  white-space: nowrap;
+  text-align: center;
   text-decoration: none;
   color: #396df2;
 }
@@ -578,11 +580,6 @@ label {
   height: 8px;
   border-radius: 50%;
   background-color: #c1c7d0;
-}
-
-.popup-action a{
-  white-space: nowrap;
-  text-align: center;
 }
 
 /* popup card style end */

@@ -446,7 +446,7 @@ label {
 }
 
 /*popup card style*/
-.popup-card {
+.popup-card1,.popup-card2,.popup-card3,.popup-card4 {
   display: none;
   justify-content: center;
   background-color: transparent;
@@ -459,6 +459,10 @@ label {
   z-index: 999;
   padding: 2% 8%;
   overflow: auto;
+}
+
+.popup-cardvisible{
+  display: flex;
 }
 
 .popup-work_desc {
@@ -538,7 +542,7 @@ label {
   color: #091e42;
 }
 
-.popup-cancel-icon {
+.popup-cancel-icon1,.popup-cancel-icon2,.popup-cancel-icon3,.popup-cancel-icon4 {
   background: none;
   border: none;
   align-items: center;

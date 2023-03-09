@@ -250,7 +250,7 @@ nav .menu_icon {
 }
 
 .btn {
-  padding: 5%;
+  padding: 2.5%;
   color: #396df2;
   background-color: #fff;
   border: 1px solid #6070ff;
@@ -476,7 +476,7 @@ label {
 .popup-work_desc {
   display: flex;
   flex-direction: column;
-  max-width: 80%;
+  max-width: 97%;
   margin-inline: auto;
   padding: 4%;
   background-color: #fff;
@@ -519,8 +519,9 @@ label {
 
 .popup-action {
   display: flex;
+  justify-content: center;
   margin-top: 10%;
-  justify-content: space-around;
+  gap: 3%;
 }
 
 .popup-action a:hover {
@@ -577,6 +578,11 @@ label {
   height: 8px;
   border-radius: 50%;
   background-color: #c1c7d0;
+}
+
+.popup-action a{
+  white-space: nowrap;
+  text-align: center;
 }
 
 /* popup card style end */
@@ -795,6 +801,14 @@ label {
 
   .Contact_form hr {
     display: none;
+  }
+
+  .popup-work_desc {
+    max-width: 92%;
+  }
+
+  .details-header h2 {
+    font-size: 32px;
   }
 
   .popup-description {

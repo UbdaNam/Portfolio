@@ -27,8 +27,8 @@ const ProjecData = [
     techStacks: ['html', 'css', 'javaScript'],
     FeaturedDesktopImage: 'images/Portoflio Card/Snapshoot Portfolio.png',
     FeaturedMobileImage: 'images/Snapshoot Portfolio.png',
-    liveVersionLink: '#',
-    sourceLink: '#',
+    liveVersionLink: 'https://ubdanam.github.io/Portfolio/',
+    sourceLink: 'https://github.com/UbdaNam/Portfolio/tree/Add-project-details',
     fullDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
     fullTechStacks: ['html', 'css', 'javaScript', 'github', 'ruby', 'Bootstraps'],
   },
@@ -42,8 +42,8 @@ const ProjecData = [
     techStacks: ['html', 'Ruby', 'css', 'javaScript'],
     FeaturedDesktopImage: 'images/Portoflio Card/Snapshoot Portfolio_2.png',
     FeaturedMobileImage: 'images/Snapshoot Portfolio 2.png',
-    liveVersionLink: '#',
-    sourceLink: '#',
+    liveVersionLink: 'https://ubdanam.github.io/Portfolio/',
+    sourceLink: 'https://github.com/UbdaNam/Portfolio/tree/Add-project-details',
     fullDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
     fullTechStacks: ['html', 'css', 'javaScript', 'github', 'ruby', 'Bootstraps'],
   },
@@ -57,8 +57,8 @@ const ProjecData = [
     techStacks: ['html', 'Ruby', 'css', 'javaScript'],
     FeaturedDesktopImage: 'images/Portoflio Card/Snapshoot Portfolio_3.png',
     FeaturedMobileImage: 'images/Snapshoot Portfolio 3.png',
-    liveVersionLink: '#',
-    sourceLink: '#',
+    liveVersionLink: 'https://ubdanam.github.io/Portfolio/',
+    sourceLink: 'https://github.com/UbdaNam/Portfolio/tree/Add-project-details',
     fullDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
     fullTechStacks: ['html', 'css', 'javaScript', 'ruby', 'next'],
   },
@@ -72,14 +72,14 @@ const ProjecData = [
     techStacks: ['html', 'Ruby', 'css', 'javaScript'],
     FeaturedDesktopImage: 'images/Portoflio Card/Snapshoot Portfolio_4.png',
     FeaturedMobileImage: 'images/Snapshoot Portfolio 4.png',
-    liveVersionLink: '#',
-    sourceLink: '#',
+    liveVersionLink: 'https://ubdanam.github.io/Portfolio/',
+    sourceLink: 'https://github.com/UbdaNam/Portfolio/tree/Add-project-details',
     fullDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
     fullTechStacks: ['html', 'css', 'javaScript', 'ruby', 'react', 'Tailwind'],
   },
 ];
 
-const ProjectContainer = document.querySelector('.works_container');
+const projectContainer = document.querySelector('.works_container');
 
 const cards = ProjecData.map((project) => `<div class="card">
       <img src="${project.FeaturedMobileImage}" alt="Portfolio image ${project.id}">
@@ -132,20 +132,20 @@ const cards = ProjecData.map((project) => `<div class="card">
                 See live
                 <img src="images/icons/liveIcon.svg" alt="live icon">
               </a>
-              </button>
-              <button class="btn">
+            </button>
+            <button class="btn">
               <a class="flex" href="${project.sourceLink}">
                 See Source
                 <img src="images/icons/buttonIconGitHub.svg" alt="Github icon">
               </a>
-              </button>
+            </button>
             </div>
           </div>
         </div>
       </div>
     </div>`).join('\n');
 
-ProjectContainer.innerHTML = cards;
+projectContainer.innerHTML = cards;
 
 function openDetails1() {
   document.querySelector('.popup-card1').classList.add('popup-cardvisible');

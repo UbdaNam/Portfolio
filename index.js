@@ -60,7 +60,7 @@ const ProjecData = [
     liveVersionLink: '#',
     sourceLink: '#',
     fullDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
-    fullTechStacks: ['html', 'css', 'javaScript', 'github', 'next'],
+    fullTechStacks: ['html', 'css', 'javaScript', 'ruby', 'next'],
   },
   {
     id: 4,
@@ -75,15 +75,11 @@ const ProjecData = [
     liveVersionLink: '#',
     sourceLink: '#',
     fullDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
-    fullTechStacks: ['html', 'css', 'javaScript', 'github', 'react', 'Tailwind'],
+    fullTechStacks: ['html', 'css', 'javaScript', 'ruby', 'react', 'Tailwind'],
   },
 ];
 
 const ProjectContainer = document.querySelector('.works_container');
-const btn1 = document.getElementById('btn1');
-const btn2 = document.getElementById('btn2');
-const btn3 = document.getElementById('btn3');
-const btn4 = document.getElementById('btn4');
 
 const cards = ProjecData.map((project) => `<div class="card">
       <img src="${project.FeaturedMobileImage}" alt="Portfolio image ${project.id}">
@@ -99,7 +95,7 @@ const cards = ProjecData.map((project) => `<div class="card">
           </div>
           <p>A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
           <ul>
-          ${project.techStacks.map((language) => `<li>${language}</li>`).join('\n')};
+          ${project.techStacks.map((language) => `<li>${language}</li>`).join('\n')}
           </ul>
           <div class="action">
             <button id='btn${project.id}' class="btn">
@@ -110,7 +106,7 @@ const cards = ProjecData.map((project) => `<div class="card">
       </div>
       <div id='popup-card' class="popup-card${project.id}">
       <div class="popup-work_desc">
-        <div class="popup-header">
+        <div class="details-header">
           <h2>${project.name}</h2>
           <button class="popup-cancel-icon${project.id}">
             <img src="images/icons/cancelIconBlack.svg" alt="Cancel icon">
@@ -128,7 +124,7 @@ const cards = ProjecData.map((project) => `<div class="card">
           <p>${project.fullDescription}</p>
           <div class="popup-stack-links">
           <ul>
-          ${project.fullTechStacks.map((language) => `<li>${language}</li>`).join('\n')};
+          ${project.fullTechStacks.map((language) => `<li>${language}</li>`).join('\n')}
           </ul>
             <div class="popup-action">
             <button class="btn">

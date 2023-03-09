@@ -89,8 +89,8 @@ let cards = ProjecData.map((project, index) => {
           <p>A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
           <ul>
           ${project.techStacks.map((language) => {
-            return `<li>${language}</li>`
-          }).join('\n')}
+    return `<li>${language}</li>`
+  }).join('\n')}
           </ul>
           <div class="action">
             <button class="btn">
@@ -98,6 +98,48 @@ let cards = ProjecData.map((project, index) => {
             </button>
           </div>
         </div>
-      </div>`}).join('\n');
+      </div>
+      <div class="popup-card">
+      <div class="popup-work_desc">
+        <div class="popup-header">
+          <h2>${project.name}</h2>
+          <button class="popup-cancel-icon">
+            <img src="images/icons/cancelIconBlack.svg" alt="Cancel icon">
+          </button>
+        </div>
+        <div class="heading_3">
+        <h3 class="main_h3">${project.company}</h3>
+        <span></span>
+        <h3>${project.role}</h3>
+        <span></span>
+        <h3>${project.year}</h3>
+      </div>
+        <img class="popup-desktop_image" src="images/popup-card-image.svg" alt="Portfolio image 1">
+        <div class="popup-description">
+          <p>${project.fullDescription}</p>
+          <div class="popup-stack-links">
+          <ul>
+          ${project.fullTechStacks.map((language) => {
+              return `<li>${language}</li>`
+           }).join('\n')}
+          </ul>
+            <div class="popup-action">
+            <button class="btn">
+              <a class="flex" href="${project.liveVersionLink}">
+                See live
+                <img src="images/icons/liveIcon.svg" alt="live icon">
+              </a>
+              </button>
+              <button class="btn">
+              <a class="flex" href="${project.sourceLink}">
+                See Source
+                <img src="images/icons/buttonIconGitHub.svg" alt="Github icon">
+              </a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>`}).join('\n');
 
 ProjectContainer.innerHTML = cards

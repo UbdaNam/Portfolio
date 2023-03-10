@@ -187,26 +187,27 @@ document.querySelector('.popup-cancel-icon2').addEventListener('click', closeDet
 document.querySelector('.popup-cancel-icon3').addEventListener('click', closeDetail3);
 document.querySelector('.popup-cancel-icon4').addEventListener('click', closeDetail4);
 
-//form
+// form
 
 const formControl = document.getElementById('form');
 const userEmail = document.getElementById('user_email');
 const errorElement = document.getElementById('error');
+
+const validateForm = () => {
+  const emailVal = userEmail.value.trim();
+  if (/^[a-z0-9]+@[a-z-0-9]+\.[a-z0-9-.]+$/.test(emailVal)) {
+    errorElement.classList.remove('error');
+    errorElement.classList.add('success');
+    errorElement.innerHTML = 'Success';
+    formControl.submit();
+  } else {
+    errorElement.classList.remove('success');
+    errorElement.classList.add('error');
+    errorElement.innerHTML = 'email should be in lowercase';
+  }
+};
+
 formControl.addEventListener('submit', (event) => {
   event.preventDefault();
   validateForm();
 });
-
-const validateForm = () => {
-  let emailVal = userEmail.value.trim()
-  if(/^[a-z0-9]+@[a-z-0-9]+\.[a-z0-9-.]+$/.test(emailVal)){
-    errorElement.classList.remove('error')
-    errorElement.classList.add('success')
-    errorElement.innerHTML = "Success";
-    form.submit()
-  }else{
-    errorElement.classList.remove('success')
-    errorElement.classList.add('error')
-    errorElement.innerHTML = "email should be in lowercase";
-  }
-}

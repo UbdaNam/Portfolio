@@ -186,3 +186,4 @@ document.querySelector('.popup-cancel-icon1').addEventListener('click', closeDet
 document.querySelector('.popup-cancel-icon2').addEventListener('click', closeDetail2);
 document.querySelector('.popup-cancel-icon3').addEventListener('click', closeDetail3);
 document.querySelector('.popup-cancel-icon4').addEventListener('click', closeDetail4);
+

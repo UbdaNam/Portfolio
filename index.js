@@ -214,22 +214,7 @@ formControl.addEventListener('submit', (event) => {
   validateForm();
 });
 
-//Local Storage (cache)
-
-// let form_data = {
-//   userName: '',
-//   userEmail: '',
-//   userMessage: '',
-//   }
-  
-//   serializedData = JSON.stringify(form_data)
-//   localStorage.setItem('formData', serializedData)
-
-if (!localStorage.length>0) {
-  saveFormData();
-} else {
-  setFormData();
-}
+// Local Storage (cache)
 
 function setFormData() {
   userName.value = localStorage.getItem('userName');
@@ -247,3 +232,9 @@ function saveFormData() {
 userName.onchange = saveFormData;
 userEmail.onchange = saveFormData;
 userMessage.onchange = saveFormData;
+
+if (!localStorage.length > 0) {
+  saveFormData();
+} else {
+  setFormData();
+}

@@ -187,3 +187,18 @@ document.querySelector('.popup-cancel-icon2').addEventListener('click', closeDet
 document.querySelector('.popup-cancel-icon3').addEventListener('click', closeDetail3);
 document.querySelector('.popup-cancel-icon4').addEventListener('click', closeDetail4);
 
+//form
+
+const formControl = document.getElementById('form')
+const userEmail = document.getElementById('user_email')
+
+document.getElementById('form').addEventListener('submit', e => {
+  e.preventDefault();
+  validateForm();
+})
+
+const validateForm = () => {
+  if(/^[a-z\s]+$/.test(userEmail)){
+    document.getElementById('error').classList.add('error')
+  }
+}

@@ -343,6 +343,7 @@ nav .menu_icon {
 
 .Contact_form_container {
   background-color: #fff;
+  width: 100%;
 }
 
 .Contact_form {
@@ -452,6 +453,23 @@ label {
   border: none;
 }
 
+.error {
+  margin-top: 5px;
+  color: #f71a46;
+  font-size: 17px;
+  font-weight: 500;
+  height: 13px;
+  margin-bottom: 2%;
+}
+
+.success {
+  margin-top: 5px;
+  color: rgb(43, 240, 43);
+  font-size: 17px;
+  font-weight: 500;
+  height: 13px;
+  margin-bottom: 2%;
+}
 /* popup card style */
 .popup-card1,
 .popup-card2,
@@ -798,6 +816,30 @@ label {
 
   .Contact_form hr {
     display: none;
+  }
+
+  .error {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 3%;
+    margin-top: 2%;
+    margin-bottom: 0;
+    color: #f71a46;
+    font-size: 15px;
+    font-weight: 500;
+    height: 13px;
+  }
+
+  .success {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 3%;
+    margin-top: 2%;
+    margin-bottom: 0;
+    color: rgb(43, 240, 43);
+    font-size: 15px;
+    font-weight: 500;
+    height: 13px;
   }
 
   .popup-work_desc {

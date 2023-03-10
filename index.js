@@ -189,16 +189,24 @@ document.querySelector('.popup-cancel-icon4').addEventListener('click', closeDet
 
 //form
 
-const formControl = document.getElementById('form')
-const userEmail = document.getElementById('user_email')
-
-document.getElementById('form').addEventListener('submit', e => {
-  e.preventDefault();
+const formControl = document.getElementById('form');
+const userEmail = document.getElementById('user_email');
+const errorElement = document.getElementById('error');
+formControl.addEventListener('submit', (event) => {
+  event.preventDefault();
   validateForm();
-})
+});
 
 const validateForm = () => {
-  if(/^[a-z\s]+$/.test(userEmail)){
-    document.getElementById('error').classList.add('error')
+  let emailVal = userEmail.value.trim()
+  if(/^[a-z0-9]+@[a-z-0-9]+\.[a-z0-9-.]+$/.test(emailVal)){
+    errorElement.classList.remove('error')
+    errorElement.classList.add('success')
+    errorElement.innerHTML = "Success";
+    form.submit()
+  }else{
+    errorElement.classList.remove('success')
+    errorElement.classList.add('error')
+    errorElement.innerHTML = "email should be in lowercase";
   }
 }

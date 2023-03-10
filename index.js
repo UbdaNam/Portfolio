@@ -186,3 +186,68 @@ document.querySelector('.popup-cancel-icon1').addEventListener('click', closeDet
 document.querySelector('.popup-cancel-icon2').addEventListener('click', closeDetail2);
 document.querySelector('.popup-cancel-icon3').addEventListener('click', closeDetail3);
 document.querySelector('.popup-cancel-icon4').addEventListener('click', closeDetail4);
+
+// form
+
+const formControl = document.getElementById('form');
+const userName = document.getElementById('user_name');
+const userEmail = document.getElementById('user_email');
+const userMessage = document.getElementById('message');
+const errorElement = document.getElementById('error');
+
+const validateForm = () => {
+  const emailVal = userEmail.value.trim();
+  if (/^[a-z0-9]+@[a-z-0-9]+\.[a-z0-9-.]+$/.test(emailVal)) {
+    errorElement.classList.remove('error');
+    errorElement.classList.add('success');
+    errorElement.innerHTML = 'Success';
+    formControl.submit();
+  } else {
+    errorElement.classList.remove('success');
+    errorElement.classList.add('error');
+    errorElement.innerHTML = 'email should be in lowercase';
+  }
+};
+
+formControl.addEventListener('submit', (event) => {
+  event.preventDefault();
+  validateForm();
+});
+
+// Local Storage (cache)
+
+const formData = {
+  userName: userName.value,
+  userEmail: userEmail.value,
+  userMessage: userMessage.value,
+};
+
+function setFormData() {
+  const data = localStorage.getItem('formData');
+  const deSerializedData = JSON.parse(data);
+
+  userName.value = deSerializedData.userName;
+  userEmail.value = deSerializedData.userEmail;
+  userMessage.value = deSerializedData.userMessage;
+}
+
+function saveFormData() {
+  formData.userName = userName.value;
+  formData.userEmail = userEmail.value;
+  formData.userMessage = userMessage.value;
+
+  const serializedData = JSON.stringify(formData);
+  localStorage.setItem('formData', serializedData);
+
+  setFormData();
+}
+
+userName.onchange = saveFormData;
+userEmail.onchange = saveFormData;
+userMessage.onchange = saveFormData;
+
+if (!localStorage.length > 0) {
+  saveFormData();
+} else {
+  setFormData();
+}

@@ -161,7 +161,7 @@
         </div>
         <p>If you have an application you are interested in developing, a feature that you need built or a project that
           needs coding. I’d love to help with it </p>
-        <form class="form" action="https://formspree.io/f/moqzdlre" method="post">
+        <form id="form" action="https://formspree.io/f/moqzdlre" class="form" method="post">
           <label for="user_name">User Name</label>
           <input class="user_name" id="user_name" maxlength="30" name="User_Name" type="text" required placeholder="User Name">
           <label for="user_email"> User Email</label>
@@ -169,8 +169,9 @@
           <label for="message">Write your message</label>
           <textarea class="message" id="message" maxlength="500" name="user_message" required placeholder="Write your message here"
             rows="8"></textarea>
+          <div id='error'></div>
           <div>
-            <button>
+            <button type="submit">
               Get in touch
             </button>
           </div>

@@ -216,16 +216,29 @@ formControl.addEventListener('submit', (event) => {
 
 // Local Storage (cache)
 
+const formData = {
+  userName: userName.value,
+  userEmail: userEmail.value,
+  userMessage: userMessage.value,
+};
+
 function setFormData() {
-  userName.value = localStorage.getItem('userName');
-  userEmail.value = localStorage.getItem('userEmail');
-  userMessage.value = localStorage.getItem('userMessage');
+  const data = localStorage.getItem('formData');
+  const deSerializedData = JSON.parse(data);
+
+  userName.value = deSerializedData.userName;
+  userEmail.value = deSerializedData.userEmail;
+  userMessage.value = deSerializedData.userMessage;
 }
 
 function saveFormData() {
-  localStorage.setItem('userName', userName.value);
-  localStorage.setItem('userEmail', userEmail.value);
-  localStorage.setItem('userMessage', userMessage.value);
+  formData.userName = userName.value;
+  formData.userEmail = userEmail.value;
+  formData.userMessage = userMessage.value;
+
+  const serializedData = JSON.stringify(formData);
+  localStorage.setItem('formData', serializedData);
+
   setFormData();
 }
 

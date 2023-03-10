@@ -190,7 +190,9 @@ document.querySelector('.popup-cancel-icon4').addEventListener('click', closeDet
 // form
 
 const formControl = document.getElementById('form');
+const userName = document.getElementById('user_name');
 const userEmail = document.getElementById('user_email');
+const userMessage = document.getElementById('message');
 const errorElement = document.getElementById('error');
 
 const validateForm = () => {
@@ -212,11 +214,36 @@ formControl.addEventListener('submit', (event) => {
   validateForm();
 });
 
-let form_data = {
-  userName: '',
-  userEmail: '',
-  userMessage: '',
-  }
+//Local Storage (cache)
+
+// let form_data = {
+//   userName: '',
+//   userEmail: '',
+//   userMessage: '',
+//   }
   
-  serializedData = JSON.stringify(form_data)
-  localStorage.setItem('formData', serializedData)
+//   serializedData = JSON.stringify(form_data)
+//   localStorage.setItem('formData', serializedData)
+
+if (!localStorage.length>0) {
+  saveFormData();
+} else {
+  setFormData();
+}
+
+function setFormData() {
+  userName.value = localStorage.getItem('userName');
+  userEmail.value = localStorage.getItem('userEmail');
+  userMessage.value = localStorage.getItem('userMessage');
+}
+
+function saveFormData() {
+  localStorage.setItem('userName', userName.value);
+  localStorage.setItem('userEmail', userEmail.value);
+  localStorage.setItem('userMessage', userMessage.value);
+  setFormData();
+}
+
+userName.onchange = saveFormData;
+userEmail.onchange = saveFormData;
+userMessage.onchange = saveFormData;

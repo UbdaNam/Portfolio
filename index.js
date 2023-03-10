@@ -211,3 +211,12 @@ formControl.addEventListener('submit', (event) => {
   event.preventDefault();
   validateForm();
 });
+
+let form_data = {
+  userName: '',
+  userEmail: '',
+  userMessage: '',
+  }
+  
+  serializedData = JSON.stringify(form_data)
+  localStorage.setItem('formData', serializedData)

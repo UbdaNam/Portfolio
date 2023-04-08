@@ -65,7 +65,6 @@ nav .menu_icon {
   left: 0;
   bottom: 0;
   background-color: rgba(60, 94, 215, 0.826);
-  mix-blend-mode: multiply;
   backdrop-filter: blur(8px);
 }
 

@@ -115,7 +115,7 @@ nav .menu_icon {
 }
 
 .container h1 {
-  font-size: min(10vw, 40px);
+  font-size: calc(min(10vw, 40px));
   font-weight: 700;
   color: #172b4d;
 }
@@ -150,8 +150,8 @@ nav .menu_icon {
   display: flex;
   flex-direction: column;
   background-color: #fff;
-  padding-block: min(20vw, 150px) 45%;
-  padding-inline: min(8vw, 36px);
+  padding-block: calc(min(20vw, 150px)) 45%;
+  padding-inline: calc(min(8vw, 36px));
   background-image: url("./images/header-shapes\ mobile.png");
   background-position: top;
   background-repeat: no-repeat;
@@ -191,7 +191,7 @@ nav .menu_icon {
 }
 
 .work_desc h2 {
-  font-size: min(8vw, 35px);
+  font-size: calc(min(8vw, 35px));
   font-weight: 700;
   color: #172b4d;
 }
@@ -294,7 +294,7 @@ nav .menu_icon {
 }
 
 .intro h2 {
-  font-size: min(12vw, 40px);
+  font-size: calc(min(12vw, 40px));
   font-weight: 700;
   color: #172b4d;
 }
@@ -373,7 +373,7 @@ nav .menu_icon {
 }
 
 .form_heading h2 {
-  font-size: min(12vw, 40px);
+  font-size: calc(min(12vw, 40px));
   font-weight: 700;
   line-height: 52px;
   color: #fff;
@@ -644,11 +644,10 @@ label {
   .container {
     background-image: url("./images/Desktop_bg/Header\ bg.svg");
     background-position: center;
-    background-position: center;
     background-size: contain;
     border-bottom-left-radius: 150px;
     padding-block: 0 172px;
-    padding-inline: min(10vw, 81px);
+    padding-inline: calc(min(10vw, 81px));
     margin-top: 76px;
   }
 
@@ -761,7 +760,7 @@ label {
     border-top-right-radius: 150px;
     padding: 0;
     padding-block: 142px 134px;
-    padding-inline: min(8vw, 142px);
+    padding-inline: calc(min(8vw, 142px));
   }
 
   .description_container {

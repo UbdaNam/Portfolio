@@ -1,125 +1,125 @@
 function openPopUp() {
-  document.querySelector(".popup-nav").classList.add("popup-nav-visible");
+  document.querySelector('.popup-nav').classList.add('popup-nav-visible');
 }
 
 function closePopUp() {
   document
-    .querySelector(".popup-nav")
-    .classList.replace("popup-nav-visible", "popup-nav");
+    .querySelector('.popup-nav')
+    .classList.replace('popup-nav-visible', 'popup-nav');
 }
 
-document.querySelector(".menu_icon").addEventListener("click", openPopUp);
-document.querySelector(".cancel-button").addEventListener("click", closePopUp);
+document.querySelector('.menu_icon').addEventListener('click', openPopUp);
+document.querySelector('.cancel-button').addEventListener('click', closePopUp);
 document
-  .querySelector(".popup-menu .menu-item")
-  .addEventListener("click", closePopUp);
+  .querySelector('.popup-menu .menu-item')
+  .addEventListener('click', closePopUp);
 document
-  .querySelector(".popup-menu .menu-item2")
-  .addEventListener("click", closePopUp);
+  .querySelector('.popup-menu .menu-item2')
+  .addEventListener('click', closePopUp);
 document
-  .querySelector(".popup-menu .menu-item3")
-  .addEventListener("click", closePopUp);
-document.querySelector(".popup-nav").addEventListener("click", closePopUp);
-document.querySelector(".popup-nav");
+  .querySelector('.popup-menu .menu-item3')
+  .addEventListener('click', closePopUp);
+document.querySelector('.popup-nav').addEventListener('click', closePopUp);
+document.querySelector('.popup-nav');
 
 // Project Cards
 
 const ProjecData = [
   {
     id: 1,
-    name: "Tonic",
-    company: "CANOPY",
-    role: "Back End Dev",
-    year: "2015",
+    name: 'Tonic',
+    company: 'CANOPY',
+    role: 'Back End Dev',
+    year: '2015',
     Description:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required.",
-    techStacks: ["html", "css", "javaScript"],
-    FeaturedDesktopImage: "images/Portoflio Card/Snapshoot Portfolio.png",
-    FeaturedMobileImage: "images/Snapshoot Portfolio.png",
-    liveVersionLink: "https://ubdanam.github.io/Portfolio/",
-    sourceLink: "https://github.com/UbdaNam/Portfolio/tree/Add-project-details",
+      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    techStacks: ['html', 'css', 'javaScript'],
+    FeaturedDesktopImage: 'images/Portoflio Card/Snapshoot Portfolio.png',
+    FeaturedMobileImage: 'images/Snapshoot Portfolio.png',
+    liveVersionLink: 'https://ubdanam.github.io/Portfolio/',
+    sourceLink: 'https://github.com/UbdaNam/Portfolio/tree/Add-project-details',
     fullDescription:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
     fullTechStacks: [
-      "html",
-      "css",
-      "javaScript",
-      "github",
-      "ruby",
-      "Bootstraps",
+      'html',
+      'css',
+      'javaScript',
+      'github',
+      'ruby',
+      'Bootstraps',
     ],
   },
   {
     id: 2,
-    name: "TO-do List",
-    company: "Personal",
-    role: "Full Stack Dev",
-    year: "2015",
+    name: 'TO-do List',
+    company: 'Personal',
+    role: 'Full Stack Dev',
+    year: '2015',
     Description:
-      "Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.",
-    techStacks: ["html", "Ruby", "css", "javaScript"],
-    FeaturedDesktopImage: "images/Portoflio Card/Snapshoot Portfolio_2.png",
-    FeaturedMobileImage: "images/Snapshoot Portfolio 2.png",
-    liveVersionLink: "https://ubdanam.github.io/Portfolio/",
-    sourceLink: "https://github.com/UbdaNam/To-Do-list",
+      'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
+    techStacks: ['html', 'Ruby', 'css', 'javaScript'],
+    FeaturedDesktopImage: 'images/Portoflio Card/Snapshoot Portfolio_2.png',
+    FeaturedMobileImage: 'images/Snapshoot Portfolio 2.png',
+    liveVersionLink: 'https://ubdanam.github.io/Portfolio/',
+    sourceLink: 'https://github.com/UbdaNam/To-Do-list',
     fullDescription:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
     fullTechStacks: [
-      "html",
-      "css",
-      "javaScript",
-      "github",
-      "ruby",
-      "Bootstraps",
+      'html',
+      'css',
+      'javaScript',
+      'github',
+      'ruby',
+      'Bootstraps',
     ],
   },
   {
     id: 3,
-    name: "Facebook 360",
-    company: "FACEBOOK",
-    role: "Full Stack Dev",
-    year: "2015",
+    name: 'Facebook 360',
+    company: 'FACEBOOK',
+    role: 'Full Stack Dev',
+    year: '2015',
     Description:
       "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
-    techStacks: ["html", "Ruby", "css", "javaScript"],
-    FeaturedDesktopImage: "images/Portoflio Card/Snapshoot Portfolio_3.png",
-    FeaturedMobileImage: "images/Snapshoot Portfolio 3.png",
-    liveVersionLink: "https://ubdanam.github.io/Portfolio/",
-    sourceLink: "https://github.com/UbdaNam/Portfolio/tree/Add-project-details",
+    techStacks: ['html', 'Ruby', 'css', 'javaScript'],
+    FeaturedDesktopImage: 'images/Portoflio Card/Snapshoot Portfolio_3.png',
+    FeaturedMobileImage: 'images/Snapshoot Portfolio 3.png',
+    liveVersionLink: 'https://ubdanam.github.io/Portfolio/',
+    sourceLink: 'https://github.com/UbdaNam/Portfolio/tree/Add-project-details',
     fullDescription:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    fullTechStacks: ["html", "css", "javaScript", "ruby", "next"],
+    fullTechStacks: ['html', 'css', 'javaScript', 'ruby', 'next'],
   },
   {
     id: 4,
-    name: "Uber Navigation",
-    company: "Uber",
-    role: "Lead Developer",
-    year: "2018",
+    name: 'Uber Navigation',
+    company: 'Uber',
+    role: 'Lead Developer',
+    year: '2018',
     Description:
-      "A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.",
-    techStacks: ["html", "Ruby", "css", "javaScript"],
-    FeaturedDesktopImage: "images/Portoflio Card/Snapshoot Portfolio_4.png",
-    FeaturedMobileImage: "images/Snapshoot Portfolio 4.png",
-    liveVersionLink: "https://ubdanam.github.io/Portfolio/",
-    sourceLink: "https://github.com/UbdaNam/Portfolio/tree/Add-project-details",
+      'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
+    techStacks: ['html', 'Ruby', 'css', 'javaScript'],
+    FeaturedDesktopImage: 'images/Portoflio Card/Snapshoot Portfolio_4.png',
+    FeaturedMobileImage: 'images/Snapshoot Portfolio 4.png',
+    liveVersionLink: 'https://ubdanam.github.io/Portfolio/',
+    sourceLink: 'https://github.com/UbdaNam/Portfolio/tree/Add-project-details',
     fullDescription:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    fullTechStacks: ["html", "css", "javaScript", "ruby", "react", "Tailwind"],
+    fullTechStacks: ['html', 'css', 'javaScript', 'ruby', 'react', 'Tailwind'],
   },
 ];
 
-const projectContainer = document.querySelector(".works_container");
+const projectContainer = document.querySelector('.works_container');
 
 const cards = ProjecData.map(
   (project) => `<div class="card">
   <div class="img-container">
       <img src="${project.FeaturedMobileImage}" alt="Portfolio image ${
-    project.id
-  }">
+  project.id
+}">
       <img class="desktop_image" src="${
-        project.FeaturedDesktopImage
-      }" alt="Portfolio image 1">
+  project.FeaturedDesktopImage
+}" alt="Portfolio image 1">
       </div>
         <div class="work_desc">
           <h2>${project.name}</h2>
@@ -133,8 +133,8 @@ const cards = ProjecData.map(
           <p>A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
           <ul>
           ${project.techStacks
-            .map((language) => `<li>${language}</li>`)
-            .join("\n")}
+    .map((language) => `<li>${language}</li>`)
+    .join('\n')}
           </ul>
           <div class="action">
             <button id='btn${project.id}' class="btn">
@@ -159,15 +159,15 @@ const cards = ProjecData.map(
         <h3>${project.year}</h3>
       </div>
         <img class="popup-desktop_image" src="${
-          project.FeaturedDesktopImage
-        }" alt="Portfolio image 1">
+  project.FeaturedDesktopImage
+}" alt="Portfolio image 1">
         <div class="popup-description">
           <p>${project.fullDescription}</p>
           <div class="popup-stack-links">
           <ul>
           ${project.fullTechStacks
-            .map((language) => `<li>${language}</li>`)
-            .join("\n")}
+    .map((language) => `<li>${language}</li>`)
+    .join('\n')}
           </ul>
             <div class="popup-action">
             <button class="btn">
@@ -186,82 +186,82 @@ const cards = ProjecData.map(
           </div>
         </div>
       </div>
-    </div>`
-).join("\n");
+    </div>`,
+).join('\n');
 
 projectContainer.innerHTML = cards;
 
 function openDetails1() {
-  document.querySelector(".popup-card1").classList.add("popup-cardvisible");
+  document.querySelector('.popup-card1').classList.add('popup-cardvisible');
 }
 
 function openDetails2() {
-  document.querySelector(".popup-card2").classList.add("popup-cardvisible");
+  document.querySelector('.popup-card2').classList.add('popup-cardvisible');
 }
 
 function openDetails3() {
-  document.querySelector(".popup-card3").classList.add("popup-cardvisible");
+  document.querySelector('.popup-card3').classList.add('popup-cardvisible');
 }
 
 function openDetails4() {
-  document.querySelector(".popup-card4").classList.add("popup-cardvisible");
+  document.querySelector('.popup-card4').classList.add('popup-cardvisible');
 }
 
 function closeDetail1() {
-  document.querySelector(".popup-card1").classList.remove("popup-cardvisible");
+  document.querySelector('.popup-card1').classList.remove('popup-cardvisible');
 }
 
 function closeDetail2() {
-  document.querySelector(".popup-card2").classList.remove("popup-cardvisible");
+  document.querySelector('.popup-card2').classList.remove('popup-cardvisible');
 }
 
 function closeDetail3() {
-  document.querySelector(".popup-card3").classList.remove("popup-cardvisible");
+  document.querySelector('.popup-card3').classList.remove('popup-cardvisible');
 }
 
 function closeDetail4() {
-  document.querySelector(".popup-card4").classList.remove("popup-cardvisible");
+  document.querySelector('.popup-card4').classList.remove('popup-cardvisible');
 }
-document.getElementById("btn1").addEventListener("click", openDetails1);
-document.getElementById("btn2").addEventListener("click", openDetails2);
-document.getElementById("btn3").addEventListener("click", openDetails3);
-document.getElementById("btn4").addEventListener("click", openDetails4);
+document.getElementById('btn1').addEventListener('click', openDetails1);
+document.getElementById('btn2').addEventListener('click', openDetails2);
+document.getElementById('btn3').addEventListener('click', openDetails3);
+document.getElementById('btn4').addEventListener('click', openDetails4);
 document
-  .querySelector(".popup-cancel-icon1")
-  .addEventListener("click", closeDetail1);
+  .querySelector('.popup-cancel-icon1')
+  .addEventListener('click', closeDetail1);
 document
-  .querySelector(".popup-cancel-icon2")
-  .addEventListener("click", closeDetail2);
+  .querySelector('.popup-cancel-icon2')
+  .addEventListener('click', closeDetail2);
 document
-  .querySelector(".popup-cancel-icon3")
-  .addEventListener("click", closeDetail3);
+  .querySelector('.popup-cancel-icon3')
+  .addEventListener('click', closeDetail3);
 document
-  .querySelector(".popup-cancel-icon4")
-  .addEventListener("click", closeDetail4);
+  .querySelector('.popup-cancel-icon4')
+  .addEventListener('click', closeDetail4);
 
 // form
 
-const formControl = document.getElementById("form");
-const userName = document.getElementById("user_name");
-const userEmail = document.getElementById("user_email");
-const userMessage = document.getElementById("message");
-const errorElement = document.getElementById("error");
+const formControl = document.getElementById('form');
+const userName = document.getElementById('user_name');
+const userEmail = document.getElementById('user_email');
+const userMessage = document.getElementById('message');
+const errorElement = document.getElementById('error');
 
 const validateForm = () => {
   const emailVal = userEmail.value.trim();
   if (/^[a-z0-9]+@[a-z-0-9]+\.[a-z0-9-.]+$/.test(emailVal)) {
-    errorElement.classList.remove("error");
-    errorElement.classList.add("success");
-    errorElement.innerHTML = "Success";
+    errorElement.classList.remove('error');
+    errorElement.classList.add('success');
+    errorElement.innerHTML = 'Success';
     formControl.submit();
   } else {
-    errorElement.classList.remove("success");
-    errorElement.classList.add("error");
-    errorElement.innerHTML = "email should be in lowercase";
+    errorElement.classList.remove('success');
+    errorElement.classList.add('error');
+    errorElement.innerHTML = 'email should be in lowercase';
   }
 };
 
-formControl.addEventListener("submit", (event) => {
+formControl.addEventListener('submit', (event) => {
   event.preventDefault();
   validateForm();
 });
@@ -275,7 +275,7 @@ const formData = {
 };
 
 function setFormData() {
-  const data = localStorage.getItem("formData");
+  const data = localStorage.getItem('formData');
   const deSerializedData = JSON.parse(data);
 
   userName.value = deSerializedData.userName;
@@ -289,7 +289,7 @@ function saveFormData() {
   formData.userMessage = userMessage.value;
 
   const serializedData = JSON.stringify(formData);
-  localStorage.setItem("formData", serializedData);
+  localStorage.setItem('formData', serializedData);
 
   setFormData();
 }

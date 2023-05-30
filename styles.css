@@ -691,7 +691,7 @@ label {
 
   .img-container {
     display: flex;
-    width: 100%;
+    max-width: 569px;
   }
 
   .desktop_image {

@@ -484,7 +484,8 @@ label {
 .popup-card1,
 .popup-card2,
 .popup-card3,
-.popup-card4 {
+.popup-card4,
+.popup-card5 {
   display: none;
   justify-content: center;
   background-color: transparent;
@@ -579,7 +580,8 @@ label {
 .popup-cancel-icon1,
 .popup-cancel-icon2,
 .popup-cancel-icon3,
-.popup-cancel-icon4 {
+.popup-cancel-icon4,
+.popup-cancel-icon5 {
   background: none;
   border: none;
   align-items: center;

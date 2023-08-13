@@ -109,6 +109,30 @@ const ProjecData = [
       'React-Testing-Library',
     ],
   },
+  {
+    id: 5,
+    name: 'Cash Wise',
+    company: 'Self-Employed',
+    role: 'Full Stack',
+    year: '2023',
+    Description:
+      'Cash Wise is a budget management tool that allows users to track their spending across different categories.',
+    techStacks: ['Ruby', 'Ruby on Rails', 'Postgres'],
+    FeaturedDesktopImage: 'images/Projects_Snapshot/CW preview.png',
+    FeaturedMobileImage: 'images/Projects_Snapshot/CW preview.png',
+    liveVersionLink: 'https://cash-wise.onrender.com',
+    sourceLink: 'https://github.com/UbdaNam/CashWise',
+    fullDescription:
+      "With Cash Wise, users can easily see where their money is going and make informed decisions about their spending. The app provides a list of transactions for each category the user created, making it easy for users to see how much they have spent and on what. Whether you're looking to save money or just want to keep better track of your finances, Cash Wise is the perfect tool for managing your budget.",
+    fullTechStacks: [
+      'Ruby',
+      'Rails',
+      'Postgres',
+      'Render',
+      'Rspec',
+      'CapyBara',
+    ],
+  },
 ];
 
 const projectContainer = document.querySelector('.works_container');
@@ -209,6 +233,10 @@ function openDetails4() {
   document.querySelector('.popup-card4').classList.add('popup-cardvisible');
 }
 
+function openDetails5() {
+  document.querySelector('.popup-card5').classList.add('popup-cardvisible');
+}
+
 function closeDetail1() {
   document.querySelector('.popup-card1').classList.remove('popup-cardvisible');
 }
@@ -224,10 +252,16 @@ function closeDetail3() {
 function closeDetail4() {
   document.querySelector('.popup-card4').classList.remove('popup-cardvisible');
 }
+
+function closeDetail5() {
+  document.querySelector('.popup-card5').classList.remove('popup-cardvisible');
+}
+
 document.getElementById('btn1').addEventListener('click', openDetails1);
 document.getElementById('btn2').addEventListener('click', openDetails2);
 document.getElementById('btn3').addEventListener('click', openDetails3);
 document.getElementById('btn4').addEventListener('click', openDetails4);
+document.getElementById('btn5').addEventListener('click', openDetails5);
 document
   .querySelector('.popup-cancel-icon1')
   .addEventListener('click', closeDetail1);
@@ -240,6 +274,9 @@ document
 document
   .querySelector('.popup-cancel-icon4')
   .addEventListener('click', closeDetail4);
+document
+  .querySelector('.popup-cancel-icon5')
+  .addEventListener('click', closeDetail5);
 
 // form
 

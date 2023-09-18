@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   background-color: #f7f7f9;
@@ -32,6 +36,10 @@ nav {
   text-decoration: none;
   line-height: 20px;
   animation: rotate 0.8s ease;
+}
+
+.logo img {
+  height: 30px;
 }
 
 @keyframes rotate {
@@ -267,6 +275,7 @@ nav .menu_icon {
   font-size: 17px;
   font-weight: 500;
   transition: 0.3s ease;
+  text-decoration: none;
 }
 
 .btn:hover {
@@ -619,7 +628,7 @@ label {
     top: 0;
     left: 0;
     right: 0;
-    padding: 26px 142px 26px 155px;
+    padding: 20px 142px 20px 155px;
     border: none;
     z-index: 3;
   }
@@ -658,7 +667,7 @@ label {
   }
 
   .container h1 {
-    font-size: 48px;
+    font-size: 35px;
     color: #091e42;
   }
 

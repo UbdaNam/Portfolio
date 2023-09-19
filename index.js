@@ -140,10 +140,10 @@ const projectContainer = document.querySelector('.works_container');
 const cards = ProjecData.map(
   (project) => `<div class="card">
   <div class="img-container">
-      <img src="${project.FeaturedMobileImage}" alt="Portfolio image ${
-  project.id
-}">
-      <img class="desktop_image" src="${
+      <img loading="lazy" src="${
+  project.FeaturedMobileImage
+}" alt="Portfolio image ${project.id}">
+      <img loading="lazy" class="desktop_image" src="${
   project.FeaturedDesktopImage
 }" alt="Portfolio image 1">
       </div>
@@ -174,7 +174,7 @@ const cards = ProjecData.map(
         <div class="details-header">
           <h2>${project.name}</h2>
           <button class="popup-cancel-icon${project.id}">
-            <img src="images/icons/cancelIconBlack.svg" alt="Cancel icon">
+            <img loading="lazy" src="images/icons/cancelIconBlack.svg" alt="Cancel icon">
           </button>
         </div>
         <div class="heading_3">
@@ -184,7 +184,7 @@ const cards = ProjecData.map(
         <span></span>
         <h3>${project.year}</h3>
       </div>
-        <img class="popup-desktop_image" src="${
+        <img loading="lazy" class="popup-desktop_image" src="${
   project.FeaturedDesktopImage
 }" alt="Portfolio image 1">
         <div class="popup-description">
@@ -197,15 +197,17 @@ const cards = ProjecData.map(
           </ul>
             <div class="popup-action">
             <button class="btn">
-              <a class="flex" href="${project.liveVersionLink}">
+              <a class="flex" href="${project.liveVersionLink}" target="_blank"
+              rel="noopener noreferrer">
                 See live
-                <img src="images/icons/liveIcon.svg" alt="live icon">
+                <img loading="lazy" src="images/icons/liveIcon.svg" alt="live icon">
               </a>
             </button>
             <button class="btn">
-              <a class="flex" href="${project.sourceLink}">
+              <a class="flex" href="${project.sourceLink}" target="_blank"
+              rel="noopener noreferrer">
                 See Source
-                <img src="images/icons/buttonIconGitHub.svg" alt="Github icon">
+                <img loading="lazy" src="images/icons/buttonIconGitHub.svg" alt="Github icon">
               </a>
             </button>
             </div>

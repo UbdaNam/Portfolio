@@ -369,7 +369,7 @@ nav .menu_icon {
   padding: 103px 24px 8px;
   background-color: #4b5af0;
   border-top-left-radius: 70px;
-  background-image: url("images/Microverse-Student-Project-1/contact\ form\ shapes-mobile.svg");
+  background-image: url("images/contact-form/mobile-contact-form.svg");
   background-position: right 25px;
   background-repeat: no-repeat;
 }
@@ -839,7 +839,7 @@ label {
   .Contact_form {
     padding: 13% 23% 12%;
     border-top-left-radius: 150px;
-    background-image: url("images/Desktop_Contact_form_bg/contact\ form\ background\ shapes.svg");
+    background-image: url("images/contact-form/desktop-contact-form.svg");
     background-position: center;
     background-repeat: no-repeat;
     text-align: center;

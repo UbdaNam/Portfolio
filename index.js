@@ -34,8 +34,8 @@ const ProjecData = [
     Description:
       'This project is a landing page for we-care fundraising platform.',
     techStacks: ['HTML', 'CSS', 'JavaScript'],
-    FeaturedDesktopImage: 'images/Projects_Snapshot/FP preview.png',
-    FeaturedMobileImage: 'images/Projects_Snapshot/FP preview.png',
+    FeaturedDesktopImage: 'images/Projects_Snapshot/FP preview.webp',
+    FeaturedMobileImage: 'images/Projects_Snapshot/FP preview.webp',
     liveVersionLink: 'https://ubdanam.github.io/Fundraising-platform/',
     sourceLink: 'https://github.com/UbdaNam/Fundraising-platform',
     fullDescription:
@@ -51,8 +51,8 @@ const ProjecData = [
     Description:
       'This is a web application that displays a list of TV shows with real-time data fetched from the server, including the number of likes for each show.',
     techStacks: ['HTML', 'CSS', 'JavaScript'],
-    FeaturedDesktopImage: 'images/Projects_Snapshot/TS preview.png',
-    FeaturedMobileImage: 'images/Projects_Snapshot/TS preview.png',
+    FeaturedDesktopImage: 'images/Projects_Snapshot/TS preview.webp',
+    FeaturedMobileImage: 'images/Projects_Snapshot/TS preview.webp',
     liveVersionLink: 'https://ubdanam.github.io/TV-Show/',
     sourceLink: 'https://github.com/UbdaNam/TV-Show',
     fullDescription:
@@ -76,8 +76,8 @@ const ProjecData = [
     Description:
       'A web application that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions.',
     techStacks: ['JavaScript', 'React', 'Redux'],
-    FeaturedDesktopImage: 'images/Projects_Snapshot/SP preview.png',
-    FeaturedMobileImage: 'images/Projects_Snapshot/SP preview.png',
+    FeaturedDesktopImage: 'images/Projects_Snapshot/SP preview.webp',
+    FeaturedMobileImage: 'images/Projects_Snapshot/SP preview.webp',
     liveVersionLink: 'https://space-travelers-hub-rw29.onrender.com/',
     sourceLink: 'https://github.com/dev89s/space-travelers-hub',
     fullDescription:
@@ -93,8 +93,8 @@ const ProjecData = [
     Description:
       'This project aims to provide up-to-date information about the COVID-19 pandemic in Africa, with a focus on tracking the number of confirmed cases, deaths, and recoveries by country.',
     techStacks: ['React', 'Redux', 'Redux-Toolkit'],
-    FeaturedDesktopImage: 'images/Projects_Snapshot/ACT preview 4.png',
-    FeaturedMobileImage: 'images/Projects_Snapshot/ACT preview 4.png',
+    FeaturedDesktopImage: 'images/Projects_Snapshot/ACT preview 4.webp',
+    FeaturedMobileImage: 'images/Projects_Snapshot/ACT preview 4.webp',
     liveVersionLink: 'https://africa-covid-19-tracker.onrender.com/',
     sourceLink: 'https://github.com/UbdaNam/africa-covid-19-tracker',
     fullDescription:
@@ -118,8 +118,8 @@ const ProjecData = [
     Description:
       'Cash Wise is a budget management tool that allows users to track their spending across different categories.',
     techStacks: ['Ruby', 'Ruby on Rails', 'Postgres'],
-    FeaturedDesktopImage: 'images/Projects_Snapshot/CW preview.png',
-    FeaturedMobileImage: 'images/Projects_Snapshot/CW preview.png',
+    FeaturedDesktopImage: 'images/Projects_Snapshot/CW preview.webp',
+    FeaturedMobileImage: 'images/Projects_Snapshot/CW preview.webp',
     liveVersionLink: 'https://cash-wise.onrender.com',
     sourceLink: 'https://github.com/UbdaNam/CashWise',
     fullDescription:

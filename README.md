@@ -7,7 +7,6 @@
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
   - [🚀 Live Demo](#live-demo)
-  - [🎥 Video description](#video-description)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -49,14 +48,6 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 - [Live Demo Link](https://abdurahim-miftah.onrender.com/)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-## 🎥 Video description <a name="video-description"></a>
-
-- Below is a link to a video that I recorded to walk you through why I did this project and what I learned from doing it.
-
-- [Video Description link](https://www.loom.com/share/b34e2bd11749442585d9239e8b470f93)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
